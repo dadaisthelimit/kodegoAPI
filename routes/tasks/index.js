@@ -4,7 +4,7 @@ const auth = require('../../middleware/auth');
 
 router.get('/', taskController.getTask);
 
-router.post('/', auth.checkToken, taskController.postTask);
+router.post('/', taskController.postTask);
 
 router.patch('/:id', taskController.patchTask);
 
